@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <div class="output">
+        <form>
+            <input type="text" id="display2" class="d2">
+            <input type="text" id="display" class="d1">
+        </form>
+        </div>
+    <div class="buttons">
+        <button onclick="display(`/`)" type="button" value="/" class="btn">÷</button>
+        <button onclick="display(`*`)" type="button" value="*" class="btn">x</button>
+        <button onclick="display(`-`)" type="button" value="-" class="btn">-</button>
+        <button onclick="display(`+`)" type="button" value="+" class="btn">+</button>
+        <button onclick="display(`7`)" type="button" value="7" class="btn">7</button>
+        <button onclick="display(`8`)" type="button" value="8" class="btn">8</button>
+        <button onclick="display(`9`)" type="button" value="9" class="btn ">9</button>
+        <button onclick="Clear(``)" type="button" value="" class="btn input-clear">c</button>
+        <button onclick="display(`4`)" type="button" value="4" class="btn">4</button>
+        <button onclick="display(`5`)" type="button" value="5" class="btn">5</button>
+        <button onclick="display(`6`)" type="button" value="6" class="btn">6</button>
+        <button onclick="Delete(``)" type="button" value="" class="btn delete">del</button>
+        <button onclick="display(`1`)" type="button" value="1" class="btn">1</button>
+        <button onclick="display(`2`)" type="button" value="2" class="btn ">2</button>
+        <button onclick="display(`3`)" type="button" value="3" class="btn ">3</button>
+        <button onclick="display(`0`)" type="button" value="0" class="btn zero">0</button>
+        <button onclick="display(`.`)" type="button" value="." class="btn ">.</button>
+        <button onclick="calc(``)" type="button" value="" class="btn equal">=</button>
+    </div>
+    </div>
+
+
+
+
+    <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>

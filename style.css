@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslateblue;
+}
+.calculator{
+    width: 300px;
+    height: 450px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    animation: change-background 5s ease infinite;
+}
+@keyframes change-background{
+    0% { background-color: #E0E0E0;}
+    20% { background-color: #BDBDBD;}
+    40% { background-color: #9E9E9E;}
+    60% { background-color: #ECEFF1;}
+    80% { background-color: #EFEBE9;}
+    100% { background-color: #B0BEC5}
+}
+.output{
+    background-color: #78909C;
+    margin-top: 20px;
+    height: 100px;
+    width: 280px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.output input{
+    width: 100%;
+    height: 50px;
+    border: none;
+    font-size: x-large;
+    padding: 5px;
+    background-color: grey;
+    text-align: right;
+    pointer-events: none;
+    background-color: transparent;
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: space-between;
+    padding: 15px;
+}
+button{
+    margin: 5px 0;
+    width: 60px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: none;
+}
+.zero{
+    grid-area: 5/1/6/3;
+    width: 125px;
+}
+.equal{
+    grid-area: 4/4/6/5;
+    height: auto;
+}
+.output .d2{
+    font-size: 20px;
+}
+.output .d1{
+    font-size: 35px;
+}
+button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: 0.5s;
+    font-weight: 500;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 1);
+}
+button:active{
+    transform: translateY(0.5em);
+    background-color: red;
+}
